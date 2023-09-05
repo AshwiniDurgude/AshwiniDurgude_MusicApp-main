@@ -1,0 +1,228 @@
+body {
+
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+main {
+/* width: 1240px; */
+height: 832px;
+background: #000;
+margin: auto;
+/* margin-top: 50px; */
+}
+
+.disp-flex {
+display: flex;
+}
+
+.margin-t-10 {
+margin-top: 15px
+}
+
+.c-pointer {
+cursor: pointer;
+}
+
+.clr-red {
+color: #C01A20;
+}
+.margin-l-32{
+margin-left: 32px;
+}
+.margin-l-57{
+margin-left: 85px;
+}
+.padding-l-36{
+    padding-left: 36px;
+}
+.margin-r-30{
+    margin-right: 30px;
+}
+.margin-l-47{
+    margin-left: -47px;
+}
+.justify-space-between{
+    justify-content: space-between;
+}
+
+
+nav {
+/* width: 1240px; */
+height: 68px;
+flex-shrink: 0;
+border: 1px solid #4d4848;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: rgb(54, 118, 174);
+}
+
+span {
+display: flex;
+list-style: none;
+position: relative;
+font-size: 16px;
+color: #ffff;
+margin-right: 30px;
+transition: .3s linear;
+}
+
+span:hover {
+color: #C01A20;
+}
+
+span:nth-child(1) {
+color: #C01A20;
+}
+
+.nav-icon {
+display: flex;
+padding: 8px;
+align-items: center;
+gap: 8px;
+}
+
+.home-style {
+color: #C01A20;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+align-items: center;
+}
+
+.lib-pod-style {
+color: #FFF;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+align-items: center;
+}
+
+.musicly-name {
+color: #C01A20;
+font-family: Righteous;
+font-size: 27.099px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+}
+
+.icons {
+display: inline-flex;
+padding: 0px 64px;
+align-items: center;
+gap: 24px;
+}
+
+.search-main {
+display: flex;
+width: 433px;
+height: 68px;
+padding: 10px 0px 10px 150px;
+justify-content: flex-end;
+align-items: center;
+flex-shrink: 0;
+}
+
+.search-btn {
+width: 433px;
+height: 68px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+flex-shrink: 0;
+position: relative;
+}
+
+.search-input {
+width: 283px;
+height: 48px;
+padding: 10px 0px 10px 20px;
+flex-shrink: 0;
+border-radius: 24px;
+background: #FFF;
+color: #C01A20;
+border: none;
+outline: none;
+overflow: hidden;
+/* color: #555; */
+text-overflow:ellipsis;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+}
+.search_icon {
+position: absolute;
+width: 24px;
+height: 24px;
+left: 384px;
+}
+.notification{
+display: flex;
+padding: 8px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.expand-btn{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.section-img{
+width: 302px;
+height: 331px;
+flex-shrink: 0;
+}
+.section-middle-img{
+width: 337px;
+height: 337px;
+flex-shrink: 0;
+}
+.section-middle-bottom-img{
+width: 337px;
+height: 30px;
+flex-shrink: 0;
+}
+.images-section{
+    display: flex;
+    align-items: center;
+    background-color:seagreen;
+}
+.song-img{
+    margin: auto;
+    margin-top: 40px;
+}
+.trending-song{
+color: #FFF;
+font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 36px */
+}
+.see-all-btn{
+display: flex;
+padding: 6px 16px;
+justify-content: center;
+align-items: center;
+color: #C01A20;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+border-radius: 8px;
+background: #FFF; /* 21px */
+}
