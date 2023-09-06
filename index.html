@@ -19,6 +19,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,900&family=Oswald:wght@700&family=Pathway+Gothic+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,100&family=Righteous&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,900&family=Oswald:wght@700&family=Pathway+Gothic+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,100&family=Righteous&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <title>Musicly-App</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -41,72 +46,174 @@
             </div>
             <!-- Search-feild-->
             <div class="search-btn">
-                <span class="search_icon"></span><input class="search-input" type="search" placeholder="Search Song, Singer or Album">
-                <img class="margin-l-47" src="asset/images/search.svg" alt=""></span>
-            <div class="disp-flex">
-
-                <div class="notification margin-l-32">
-                    <img src="asset/images/notification.svg" alt="notification">
-                </div>
+                <span class="search_icon"></span><input class="search-input" type="search"
+                    placeholder="Search Song, Singer or Album">
+                <img class="margin-l-47" src="asset/images/search.svg" alt="">
                 <div class="disp-flex">
+
                     <div class="notification margin-l-32">
-                        <img src="asset/images/profile.svg" alt="Profile">
+                        <img src="asset/images/notification.svg" alt="notification">
                     </div>
-                    <div class="notification">
-                        <img src="asset/images/expand_more.svg" alt="expand_more">
+                    <div class="disp-flex">
+                        <div class="notification margin-l-32">
+                            <img src="asset/images/profile.svg" alt="Profile">
+                        </div>
+                        <div class="c-pointer notification margin-r-32">
+                            <img src="asset/images/expand_more.svg" alt="expand_more">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </nav>
         <!-- navigation End -->
 
         <!-- Section 1st Start -->
-        <section>
-            <div class="images-section">
-                <div class="disp-flex">
-                    <img class="padding-l-36" src="asset/images/arrow_back_ios_new.svg" alt="arrow_back">
-                </div>
-                <div class="disp-flex song-img">
-                    <div>
-                        <span><img class="section-img" src="asset/images/udd_jaa.svg" alt="udd_jaa"></span>
-                        <div style="width: 302px;
-                        height: 60px;
-                        flex-shrink: 0; background-color: aqua;">gfdg</div>
+        <div class="padding-32">
+            <section>
+                <h1 class="disp-none">Section 1st</h1>
+                <div class="images-section">
+                    <div class="disp-flex">
+                        <img class="c-pointer" src="asset/images/arrow_back_ios_new.svg" alt="arrow_back">
                     </div>
-                    <div>
-                        <span><img class="section-middle-img" src="asset/images/heeriye.svg" alt="heeriye"></span>
-                        <div class="section-middle-bottom-img" style="background-color: blueviolet;">gdg</div>
+                    <div class="disp-flex song-img">
+                        <div class="">
+                            <span><img class="section-img img-shaow padding-b-8 border-r-8" src="asset/images/udd_jaa.svg"
+                                    alt="udd_jaa"></span>
+                            <div class="section-mid-l-r-img"></div>
+                        </div>
+                        <div class="">
+                            <span><img class="section-middle-img padding-b-8 img-shaow border-r-8"
+                                    src="asset/images/heeriye.svg" alt="heeriye"></span>
+                            <div class="section-middle-bottom-img"></div>
+                        </div>
+                        <div class="">
+                            <span><img class="section-img img-shaow padding-b-8 border-r-8" src="asset/images/hukum.svg"
+                                    alt="hukum"></span>
+                            <!-- <div class="section-mid-l-r-img"></div> -->
+                        </div>
                     </div>
-                    <div>
-                        <span><img class="section-img" src="asset/images/hukum.svg" alt="hukum"></span>
-                        <div style="width: 302px;
-                        height: 60px;
-                        flex-shrink: 0; background-color: aqua;">gxfhf</div>
+                    <div class="disp-flex">
+                        <img class="c-pointer " src="asset/images/arrow_forward_ios.svg" alt="arrow_forward">
                     </div>
                 </div>
-                <div class="disp-flex">
-                    <img class=" margin-r-30" src="asset/images/arrow_forward_ios.svg" alt="arrow_forward">
-                </div>
-            </div>
-        </section>
-        <!-- Section End -->
-        <!-- Section 2nd start -->
-        <section>   
-            <div class="disp-flex justify-space-between" style="background-color: beige;">
-                <div class=""><p class="trending-song">Trending Songs</p>
-                </div>
-                <div class="disp-flex">
-                    <figure>
+            </section>
+            <!-- Section End -->
+            <!-- Section 2nd start -->
+            <section>
+                <h1 class="disp-none">Section 2nd</h1>
+                <div class="disp-flex justify-space-between h-33 margin-b-10">
+                    <div class="trending-song ">Trending Songs
+                    </div>
+                    <div class="c-pointer see-btn-div">
                         <img src="asset/images/arrow_back.svg" alt="">
                         <img src="asset/images/arrow_forward.svg" alt="">
-                    </figure>
-                    <button class="see-all-btn">See All</button>
+                        <button class="see-all-btn c-pointer ">See All</button>
+                    </div>
                 </div>
-                
-            </div>
-        </section>
-         <!-- Section 2nd end -->
+            </section>
+            <!-- Section 2nd end -->
+            <!-- Section 3rd start -->
+            <section>
+                <h1 class="disp-none">Section 3rd</h1>
+                <div class="card">
+                    <div class="card-1 img-hover-play">
+                        <img class="border-r-8 image zoom " src="asset/section3-img/hukum170px.svg" alt="">
+                        <div class="middle ">
+                            <div>
+                                <img src="asset/images/PlaySongIcon.svg" alt="PlaySongIcon">
+                            </div>
+                        </div>
+                        <div class="card-song-name">Hukum</div>
+                        <div class="card-singer-name">Anirudh Ravichander</div>
+                    </div>
+    
+                    <div class="card-1 img-hover-play">
+                        <img class="border-r-8 image zoom" src="asset/section3-img/heeriye170px.svg" alt="">
+                        <div class="middle ">
+                            <div>
+                                <img src="asset/images/PlaySongIcon.svg" alt="PlaySongIcon">
+                            </div>
+                        </div>
+                        <div class="card-song-name">Heeriye (feat. Arijit Singh)</div>
+                        <div class="card-singer-name">Jasleen Royal, Arijit Singh</div>
+                    </div>
+    
+                    <div class="card-1 img-hover-play">
+                        <img class="border-r-8 image zoom" src="asset/section3-img/uddjaa170px.svg" alt="">
+                        <div class="middle ">
+                            <div>
+                                <img src="asset/images/PlaySongIcon.svg" alt="PlaySongIcon">
+                            </div>
+                        </div>
+                        <div class="card-song-name">Udd Jaa Kaale Kaava</div>
+                        <div class="card-singer-name">Udit Narayan</div>
+                    </div>
+                    <div class="card-1 img-hover-play">
+                        <img class="border-r-8 image zoom" src="asset/section3-img/heeriye170px.svg" alt="">
+                        <div class="middle ">
+                            <div>
+                                <img src="asset/images/PlaySongIcon.svg" alt="PlaySongIcon">
+                            </div>
+                        </div>
+                        <div class="card-song-name">Heeriye (feat. Arijit Singh)</div>
+                        <div class="card-singer-name">Jasleen Royal, Arijit Singh</div>
+                    </div>
+                    <div class="card-1 img-hover-play">
+                        <img class="border-r-8 image zoom" src="asset/section3-img/hukum170px.svg" alt="">
+                        <div class="middle ">
+                            <div>
+                                <img src="asset/images/PlaySongIcon.svg" alt="PlaySongIcon">
+                            </div>
+                        </div>
+                        <div class="card-song-name">Hukum</div>
+                        <div class="card-singer-name">Anirudh Ravichander</div>
+                    </div>
+                    <div class="card-1 img-hover-play">
+                        <img class="border-r-8 image zoom" src="asset/section3-img/uddjaa170px.svg" alt="">
+                        <div class="middle ">
+                            <div>
+                                <img src="asset/images/PlaySongIcon.svg" alt="PlaySongIcon">
+                            </div>
+                        </div>
+                        <div class="card-song-name">Udd Jaa Kaale Kaava</div>
+                        <div class="card-singer-name">Udit Narayan</div>
+                    </div>
+                    <!-- <div class="card-1 img-hover-play">
+                        <img class="border-r-8 image zoom" src="asset/section3-img/heeriye170px.svg" alt="">
+                        <div class="middle ">
+                            <div>
+                                <img  src="asset/images/PlaySongIcon.svg" alt="PlaySongIcon">
+                            </div>
+                        </div>
+                        <div class="card-song-name">Heeriye (feat. Arijit Singh)</div>
+                        <div class="card-singer-name">Jasleen Royal, Arijit Singh</div>
+                    </div> -->
+                </div>
+            </section>
+            <!-- Section 3rd end -->
+            <footer>
+                <div class="disp-flex justify-space-between item-center h-100">
+                    <div class="disp-flex g-24 ">
+                        <img class="footer-img"src="asset/section3-img/heeriyelive.png" alt="">
+                        <div class="padding-t-8">
+                            <div class="footer-song-name">Heeriye (feat. Arijit Singh)</div>
+                            <div class="footer-singer-name">Jasleen Royal, Arijit Singh</div>
+                        </div>
+                    </div>
+                    
+                    <div class="margin-r">
+                        <img class="c-pointer" src="asset/images/pre-song.svg" alt="">
+                        <img class="c-pointer" src="asset/images/start.svg" alt="">
+                        <img class="c-pointer" src="asset/images/next-song.svg" alt="">
+                    </div>
+                    <div>
+                        <button class="show-lyrics-btn c-pointer">Show Lyrics</button>
+                    </div>
+                </div>
+            </footer>
+        </div>
+       
+
     </main>
     <script src="app.js"></script>
 </body>
