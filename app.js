@@ -110,7 +110,8 @@
       const playSong = document.getElementById('playSong');
       const pauseSong = document.getElementById('pauseSong');
       const audioPlay = document.getElementById('audioPlay');
-
+      const audioProgressBar = document.getElementById('audioProgressBar');
+      // let audioElement = new Audio('asset/song/Heeriye-song-mp3.mp3');
       playSong.style.display = "none";
 
       pauseSong.addEventListener('click',function(){
@@ -125,4 +126,18 @@
         pauseSong.style.display = "inline";
       });
 
-     
+      audioPlay.addEventListener('timeupdate', function(){
+        const liveTime = audioPlay.currentTime;
+        const songDuration = audioPlay.duration;
+        const result = (liveTime / songDuration) * 100;
+        audioProgressBar.value = result;
+        // console.log("ff", result);
+      });
+
+      audioProgressBar.addEventListener('input', function(){
+        const result = audioProgressBar.value;
+        const songDuration  = audioPlay.duration;
+        const liveTime = (result / 100) * songDuration;
+       audioPlay.currentTime = liveTime;
+        
+      });

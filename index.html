@@ -274,15 +274,17 @@
             </section>
             <!-- Section 3rd end -->
             <section>
-                <!-- <div class="disp-none" id="show-lyrics"
-                    style="background-color: blue; height: 100%; top: 0;  position: fixed;">
+                <div class="disp-none lyrics-flex" id="show-lyrics" style="width: 98%;
+                height: 800px;
+                flex-shrink: 0;">
                     <div class="">
-                        <div onclick="showLyrics()">
-                            V
+                        <div >
+                            <img class="c-pointer" src="asset/images/expand_more.svg" onclick="showLyrics()" alt="">
                         </div>
-                        <div class="disp-flex justify-space-between">
+                        <div class="disp-flex " >
                             <div class="">
-                                <img style="height: 250px;" src="asset/section3-img/heeriyelive.png" alt="">
+                                <img style="width: 336px;
+                                    height: 336px;" src="asset/images/HeeriyeLayrics.png" alt="">
                             </div>
                             <div class="">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste maxime nostrum repudiandae
@@ -291,11 +293,11 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
-                <div class="disp-flex disp-none" id="show-lyrics" style=" justify-content:space-between ; top: 0; ">
+                </div>
+                <!-- <div class="disp-flex " id="show-lyrics" style=" top: 0; height: 800px; width: 100%; ">
                         <div class="disp-flex lyrics-flex" >
                             <div class=" disp-flex" >
-                                <img class="c-pointer" src="asset/images/expand_more.svg" onclick="showLyrics()" alt="">
+                                 <img class="c-pointer" src="asset/images/expand_more.svg" onclick="showLyrics()" alt="">
                             </div>
                             <div class="disp-flex">
                                 <img style="height: 250px;" src="asset/section3-img/heeriyelive.png" alt="">
@@ -306,14 +308,13 @@
                             optio illum sapiente rem illo aspernatur pariatur eius! Rem quidem nesciunt laudantium
                             ducimus rerum quod quisquam suscipit libero?
                         </div>
-                </div>
+                </div> -->
 
             </section>
         </div>
         <footer>
             <div>
-                <input class="audio-progress-bar" type="range" id="myProgressbar" name="range" min="0" max="100"
-                    style="width: 100%;">
+                <input class="audioProgressBar" type="range" id="audioProgressBar" name="range" min="0" value="0" step="1">
             </div>
 
             <div class=" footer-main disp-flex justify-space-between item-center h-100 padding-32">

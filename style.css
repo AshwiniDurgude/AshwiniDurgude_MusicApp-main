@@ -429,10 +429,14 @@ span:nth-child(1) {
   height: 64px;
 }
 
-.audio-progress-bar {
+.audioProgressBar {
   width: 100%;
   height: 2px;
   background: #555;
+}
+#audioProgressBar{
+  flex-grow: 1;
+  margin: 0 10px;
 }
 
 .show-lyrics-btn {
@@ -449,16 +453,32 @@ span:nth-child(1) {
   border-radius: 8px;
   background: #C01A20;
 }
-
+.hide-lyrics-btn {
+  display: flex;
+  padding: 6px 16px;
+  justify-content: center;
+  align-items: center;
+  color:#C01A20;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  border-radius: 8px;
+  background: #FFF;
+}
 .lyrics-flex {
-  background-image: url('../asset/images/background-blur.png');
-  background-size: cover;
-  height: 100%;
+
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
+  width: 98%;
+  height: 100%;
+  background-image: url('../asset/images/background-blur.png');
+  background-size: cover;
   padding: 0px 20px 0px 20px;
+  color: #FFF;
 }
 
 /* slider css */
@@ -512,4 +532,12 @@ span:nth-child(1) {
   transform-style: preserve-3d;
   /* transition: transform 0.5s; */
   transform: rotateY(30deg);
+}
+.expand-arrow-lyric{
+width: 40px;
+height: 40px;
+}
+.lyrics-img{
+  width: 336px;
+  height: 336px;
 }

@@ -1,0 +1,18 @@
+let audioElement = new Audio('asset/song/Heeriye-song-mp3.mp3');let gif =
+document.querySelector('.gif-css')let playButton =
+document.getElementById('play-btn')let pauseButton =
+document.getElementById('pause-btn')let myProgreesbar =
+document.querySelector('#myProgressbar');pauseButton.addEventListener('click',
+() => { if (audioElement.paused || audioElement.currentTime <= 0) {
+audioElement.play(); pauseButton.style.display = "none";
+playButton.style.display = "block"; gif.style.display = "block"
+}})playButton.addEventListener('click', () => { audioElement.pause();
+pauseButton.style.display = "block"; playButton.style.display = "none";
+gif.style.display = "none"})audioElement.addEventListener('timeupdate',()=>{//
+console.log(audioElement.currentTime);//
+console.log(audioElement.duration)progress=
+parseInt((audioElement.currentTime/audioElement.duration)*100);myProgreesbar.value
+= progress;// console.log(myProgreesbar.value)//
+console.log(audioElement.currentTime);//
+console.log(audioElement.duration);})myProgreesbar.addEventListener('change',
+()=>{audioElement.currentTime = myProgreesbar.value*audioElement.duration/100})
