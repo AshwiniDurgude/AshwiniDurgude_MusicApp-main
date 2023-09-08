@@ -59,7 +59,13 @@
                             <img src="asset/images/profile.svg" alt="Profile">
                         </div>
                         <div class="c-pointer notification margin-r-32">
-                            <img src="asset/images/expand_more.svg" alt="expand_more">
+                            <img src="asset/images/expand_more.svg" id="expandButton" alt="expand_more">
+                            <div class="expandOption" id="expandOption">
+                                <button class="button-expand-option" id="option1">My Account</button>
+                                <button class="button-expand-option" id="option2">Premium</button>
+                                <button class="button-expand-option" id="option3">Log Out</button>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -274,41 +280,30 @@
             </section>
             <!-- Section 3rd end -->
             <section>
-                <div class="disp-none lyrics-flex" id="show-lyrics" style="width: 98%;
-                height: 800px;
-                flex-shrink: 0;">
+                <div class="disp-none lyrics-flex  lyrics-div" id="show-lyrics">
                     <div class="">
-                        <div >
-                            <img class="c-pointer" src="asset/images/expand_more.svg" onclick="showLyrics()" alt="">
+                        <div class="disp-flex" >
+                            <img class="c-pointer expand-arrow-lyric" src="asset/images/expand_more.svg" onclick="showLyrics()" alt="">
                         </div>
-                        <div class="disp-flex " >
-                            <div class="">
-                                <img style="width: 336px;
-                                    height: 336px;" src="asset/images/HeeriyeLayrics.png" alt="">
+                        <div class="disp-flex padding-t">
+                            <div class="disp-flex">
+                                <img src="asset/images/HeeriyeLayrics.png" alt="">
                             </div>
-                            <div class="">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste maxime nostrum repudiandae
-                                optio illum sapiente rem illo aspernatur pariatur eius! Rem quidem nesciunt laudantium
-                                ducimus rerum quod quisquam suscipit libero?
+                           
+                            <div class=" disp-flex songLyrics lyricsText lyrics-content lyrics-container aaaa" id="lyrics-content" style="background-color: aquamarine; height: 300px; width: 300px;">
+                                <pre> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste maxime nostrum repudiandae
+                                    optio illum sapiente rem illo aspernatur pariatur eius! Rem quidem nesciunt laudantium
+                                    ducimus rerum quod quisquam suscipit libero?</pre>
+                                    <!-- <audio src="asset/song/Heeriye-song-mp3.mp3" id="audio-Player" controls></audio> -->
                             </div>
-                        </div>
+                            <!-- <div class=" disp-flex songLyrics lyricsText lyrics-content" id="lyrics-content">
+
+                            </div>
+                            <audio src="asset/song/Heeriye-song-mp3.mp3" id="audio-Player" controls></audio>
+                        </div> -->
                     </div>
                 </div>
-                <!-- <div class="disp-flex " id="show-lyrics" style=" top: 0; height: 800px; width: 100%; ">
-                        <div class="disp-flex lyrics-flex" >
-                            <div class=" disp-flex" >
-                                 <img class="c-pointer" src="asset/images/expand_more.svg" onclick="showLyrics()" alt="">
-                            </div>
-                            <div class="disp-flex">
-                                <img style="height: 250px;" src="asset/section3-img/heeriyelive.png" alt="">
-                            </div>
-                        </div>
-                        <div >
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste maxime nostrum repudiandae
-                            optio illum sapiente rem illo aspernatur pariatur eius! Rem quidem nesciunt laudantium
-                            ducimus rerum quod quisquam suscipit libero?
-                        </div>
-                </div> -->
+    
 
             </section>
         </div>

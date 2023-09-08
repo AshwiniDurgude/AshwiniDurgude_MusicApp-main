@@ -90,6 +90,9 @@ main {
 .disp-none {
   display: none;
 }
+.padding-t{
+  padding-top: 200px;
+}
 
 /* nav Section */
 nav {
@@ -469,9 +472,9 @@ span:nth-child(1) {
 }
 .lyrics-flex {
 
-  display: flex;
+  /* display: flex; */
   /* flex-wrap: wrap; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* align-items: center; */
   width: 98%;
   height: 100%;
@@ -540,4 +543,60 @@ height: 40px;
 .lyrics-img{
   width: 336px;
   height: 336px;
+}
+.lyrics-div{
+  width: 98%;
+  height: 800px;
+}
+.songLyrics{
+  color: #FFF;
+text-align: right;
+font-family: Roboto;
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 39.2px */
+letter-spacing: 0.56px;
+text-transform: capitalize;
+}
+.songLyricsCurrent{
+  color: #FFF;
+font-family: Roboto;
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%;
+letter-spacing: 0.56px;
+text-transform: capitalize;
+}
+.lyricsText{
+  text-align: end;
+}
+.lyrics-content{
+  padding: 10px;
+  transition: transform 1s linear;
+  border: 1px solid white;
+}
+/* .lyrics-container{
+  overflow: hidden;
+  height: 546px;
+} */
+.createDiv{
+color: #FFF;
+}
+.expandOption{
+  /* display: none; */
+  bottom: -40px;
+  /* left: 0;
+  right: 0; */
+  position: absolute;
+  background-color: #FFF;
+  border: 1px solid #ccc;
+
+}
+.button-expand-option{
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
 }

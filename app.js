@@ -13,17 +13,8 @@
       let currentIndex = 0;
       let currentSlide = 1;
       
-      // setInterval(() => {
-      //       if (currentSlide < slides.length - 2) {
-      //           currentIndex = (currentIndex + 1 + slides.length) % slides.length;
-      //           showSlide(++currentSlide);
-      //           updateSlider();
-      //           if(currentSlide === slides.length - 2) {
-      //               currentIndex = -1;
-      //               currentSlide = 0;
-      //           }
-      //       }
-      //   }, 1000); 
+     
+      
 
       prevButton.addEventListener('click', () => {
         if (currentSlide > 1) { 
@@ -101,6 +92,7 @@
 
 // showLyrics function
     function showLyrics(){
+      // showSongLyrics();
        let showLyricsDiv = document.getElementById('show-lyrics'); 
        showLyricsDiv.scrollIntoView();
        showLyricsDiv.classList.toggle('disp-none')
@@ -141,3 +133,82 @@
        audioPlay.currentTime = liveTime;
         
       });
+
+      // Lyrics play
+      const lyricsContent = document.getElementById('lyrics-content');
+      const audioPlayer = document.getElementById('audioPlay');
+      
+            const lyrics = [
+          "Heeriye, Heeriye, aa",
+          "Heeriye, Heeriye, aa",
+          "Teri hoke maraan Jind Jaan karaan",
+          "Teri hoke maraan Jind Jaan karaan",
+          "Heeriye, Heeriye, aa",
+          "Heeriye, Heeriye, aa",
+
+          "Neendan vi Tutt Tutt gaiyan",
+          "Chundi main Taare rahiyaan",
+          "Sochan vich Teriyan paiyaaan", 
+          "Haaniyaaa",
+
+          "Saari saar raat Jaga ve",
+          "Yadan nu Zikar Tera Ve",
+          "Aaye kyun na aaye subha ve", 
+          "Haaniyaa",
+
+          "Teri hoke maraan Jind Jaan karaan",
+          "Teri hoke maraan Jind Jaan karaan",
+          "Heeriye, Heeriye, aa",
+          "Heeriye, Heeriye, aa",
+
+          "Chheti aa Chheti Sohne Raat na lange",
+          "Aaja ve Aaja Sohne Raat na lange",
+          "Chheti aa Chheti Sohne Raat na lange",
+          "Aaja ve Aaja Sohne Raat na lange",
+
+          "Jad vi tenu takdi haan ve",
+          "Akhiyan vi shukar manave",
+          "Kole aa door na jaave, haaniya",
+
+          "Palkaan di kar ke chhaanva",
+          "Dil de tenu kol bithaanva",
+          "Tak Tak tenu Khairan paanva, haaniya",
+
+          "teri... haaniya, teri",
+          "teri... haaniya, teri",
+
+          "Teri hoke maraan Jind Jaan karaan",
+          "Teri hoke maraan Jind Jaan karaan",
+          "Heeriye, Heeriye, aa",
+          "Heeriye, Heeriye, aa",
+
+          "haaniya, teri",
+          "haaniya teri"
+      ];
+ let currentLine = 0;
+ let isPlaying = false;
+
+ function updateLyrics(){
+  if(isPlaying){
+    const translateY = -currentLine * 39.2;
+    lyricsContent.style.transform = `translateY(${translateY}px)`;
+    currentLine++;
+  }
+ }
+
+ audioPlayer.addEventListener('timeupdate', updateLyrics);
+
+ audioPlayer.addEventListener('play', () =>{
+  isPlaying = true;
+  currentLine = 0;
+  updateLyrics();
+ });
+
+ audioPlayer.addEventListener('pause',() =>{
+ isPlaying = false;
+
+ });
+
+
+
+//  ExpandButton
